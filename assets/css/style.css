@@ -1,0 +1,54 @@
+/* inicio reset */
+body, p, h1, ul, li, blockquote{
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  width: 100px;
+}
+
+body{
+  font-family: "Vollkorn", Georgia, serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* fim reset */
+
+/* inincio grid geral */
+.estrutura{
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas: 
+    "header header header"
+    "side-menu conteudo anuncios"
+    "footer footer footer"
+  ;
+}
+
+.header{
+  grid-area: header;
+}
+
+.side-menu{
+  grid-area: side-menu;
+}
+
+.conteudo{
+  grid-area: conteudo;
+}
+
+.anuncios{
+  grid-area: anuncios;
+}
+
+.footer{
+  grid-area: footer;
+}
