@@ -71,10 +71,29 @@ a{
 .header-menu ul li + li{
   margin-left: 30px;
 }
+/* fim estilo header */
 
-
+/* inincio estilo side menu */
 .side-menu{
   grid-area: side-menu;
+  background: #fafbfc;
+  padding: 30px;
+}
+
+.side-menu li a{
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+  transition: 0.1s ease-out;
+}
+
+.side-menu li a:hover{
+  background: #b07dfb;
 }
 
 .conteudo{
