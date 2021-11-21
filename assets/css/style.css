@@ -5,7 +5,7 @@ body, p, h1, ul, li, blockquote{
 }
 
 img{
-  width: 100px;
+  max-width: 100%;
 }
 
 body{
@@ -33,9 +33,45 @@ a{
   ;
 }
 
+
+/* inincio estilo header */
 .header{
   grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;/* alinhando no eixo vertical */
 }
+
+.header-logo{
+  max-width: 200px;
+}
+
+.header-menu ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-menu ul li a{
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125em; /*18px*/
+  background: rgba(0,0,0,.1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.header-menu ul li a:hover{
+  background: rgba(0,0,0,.5);
+}
+
+/* utilizando o seletor de + para definir que as alterações vao ser de cada li seguido de um li somente*/
+.header-menu ul li + li{
+  margin-left: 30px;
+}
+
 
 .side-menu{
   grid-area: side-menu;
@@ -52,3 +88,11 @@ a{
 .footer{
   grid-area: footer;
 }
+
+/* fim grid geral */
+
+
+
+
+
+/* fim estilo header */
