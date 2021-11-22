@@ -5,7 +5,9 @@ body, p, h1, ul, li, blockquote{
 }
 
 img{
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 body{
@@ -95,20 +97,49 @@ a{
 .side-menu li a:hover{
   background: #b07dfb;
 }
+/* fim estilo side menu */
 
+/* inincio estilo conteudo */
 .conteudo{
   grid-area: conteudo;
-}
 
+}
+/* fim estilo conteudo */
+
+/* inincio estilo anuncios */
 .anuncios{
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  grid-gap: 30px; /* adiciona um gap entre os elementos*/
 }
+/* fim estilo anuncios */
 
+/* inincio estilo footer */
 .footer{
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
-/* fim grid geral */
+.footer p{
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer a{
+  color: white;
+  font-weight: bolds;
+  transition: 0.1s;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+/* fim estilo footer */
+
 
 
 
