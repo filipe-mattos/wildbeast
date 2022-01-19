@@ -6,7 +6,6 @@ body, p, h1, ul, li, blockquote{
 
 img{
   display: block;
-  max-width: 100%;
   width: 100%;
   border-radius: 5px;
 }
@@ -60,7 +59,7 @@ p{
     grid-template-areas: 
       "header"
       "side-menu"
-      "content"
+      "conteudo"
       "anuncios"
       "footer"
     ;
@@ -203,6 +202,12 @@ p{
   gap: 30px;
 }
 
+@media (max-width: 600px){
+  .conteudo{
+    grid-template-columns: auto;
+  }
+}
+
 .col-wide{
   grid-column: 1 / -1;
 }
@@ -338,6 +343,7 @@ p{
   align-content: start;
   padding: 30px;
   grid-gap: 30px; /* adiciona um gap entre os elementos*/
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 /* fim estilo anuncios */
 
